@@ -1,68 +1,142 @@
-import React from "react";
-import '../Template/Privacy.css';
+import React from 'react';
+import { Container, Typography, Box, Divider } from '@mui/material';
+import Fondo from '../Assets/Fondo.png'
 
 const Privacy = () => {
     return (
-        <div className="privacy-container">
-            <div className="parallax">
-                <h1>Política de Privacidad</h1>
-            </div>
+        <div style={{ background: '#fff3ece7' }}>
+            <Container maxWidth="md" sx={{ py: 6, backgroundColor: '#fff3ece7' }}>
+                <Box textAlign="center" mb={4}
+                sx={{
+                    backgroundImage: `url("${Fondo}")`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    padding: '60px 20px',
+                    borderRadius: '16px',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                    color: '#fff3ece7',
+                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
+                    '& h1': {
+                        fontSize: '2.5rem',
+                        fontWeight: 'bold',
+                    },
+                    '& h6': {
+                        fontSize: '1.2rem',
+                        fontWeight: 'normal',
+                    },
+                    '& p': {
+                        fontSize: '1rem',
+                        fontWeight: 'normal',
+                    }
+                }}>
+                    <Typography variant="h4" component="h1" gutterBottom>
+                        Política de Privacidad
+                    </Typography>
+                    <Typography variant="h6">
+                        Última actualización: Abril 2025
+                    </Typography>
+                </Box>
 
-            <div className="content">
-                <section>
-                    <h2>1. Información que Recopilamos</h2>
-                    <p><strong>1.1. Información Personal Identificable:</strong> Nombre, Correo electrónico, Información de la cuenta (si se utiliza una cuenta de usuario), Información de pago (si aplica).</p>
-                    <p><strong>1.2. Información No Identificable:</strong> Información sobre el dispositivo, Datos de ubicación, Datos de uso, Cookies y tecnologías de seguimiento.</p>
-                    <p><strong>1.3. Información de la Actividad de la Aplicación:</strong> Recopilamos información sobre cómo utilizas la aplicación para mejorar las recomendaciones y el servicio, como las preferencias de alimentación y el historial de actividades.</p>
-                </section>
+                <Box>
+                    <Typography variant="h6" gutterBottom>1. Información de la Empresa</Typography>
+                    <Typography>
+                        Esta política es emitida por <strong>AZAKTILSA S.A.</strong>, con domicilio en Pública SL 13 y Juan Montalván Cornejo, Durán, Ecuador. Para cualquier consulta, puede contactarse al correo <strong>terrawasuffa@gmail.com</strong> o al teléfono <strong>0958600426</strong>.
+                    </Typography>
+                </Box>
 
-                <section>
-                    <h2>2. Cómo Usamos la Información</h2>
-                    <p><strong>2.1. Proveer y Mejorar los Servicios:</strong> Utilizamos la información recopilada para personalizar las recomendaciones, mejorar la calidad de la aplicación y enviar notificaciones.</p>
-                    <p><strong>2.2. Comunicaciones:</strong> Podremos enviarte correos electrónicos o notificaciones dentro de la app sobre actualizaciones, promociones y soporte.</p>
-                    <p><strong>2.3. Análisis:</strong> Usamos la información para analizar el uso de la app y mejorar la experiencia de usuario.</p>
-                </section>
+                <Divider sx={{ my: 3 }} />
 
-                <section>
-                    <h2>3. Compartición de la Información</h2>
-                    <p><strong>3.1. Proveedores de Servicios:</strong> Compartimos tu información con proveedores de servicios que ayudan en el funcionamiento de la app.</p>
-                    <p><strong>3.2. Cumplimiento Legal:</strong> Podemos compartir tu información si es requerido por ley o para proteger nuestros derechos.</p>
-                    <p><strong>3.3. Terceros:</strong> No compartimos tu información con terceros para fines comerciales sin tu consentimiento.</p>
-                </section>
+                <Box>
+                    <Typography variant="h6" gutterBottom>2. Alcance y Aceptación</Typography>
+                    <Typography>
+                        Al acceder y utilizar nuestra aplicación de Alimentación de Camarón, usted acepta los términos establecidos en esta Política de Privacidad. Esta política rige el tratamiento de los datos personales recolectados a través de la aplicación.
+                    </Typography>
+                </Box>
 
-                <section>
-                    <h2>4. Seguridad de la Información</h2>
-                    <p>Tomamos medidas para proteger tu información, pero ten en cuenta que ninguna transmisión es 100% segura.</p>
-                </section>
+                <Divider sx={{ my: 3 }} />
 
-                <section>
-                    <h2>5. Cookies y Tecnologías de Seguimiento</h2>
-                    <p><strong>5.1. Uso de Cookies:</strong> Utilizamos cookies para mejorar tu experiencia y personalizar tu interacción con la app.</p>
-                    <p><strong>5.2. Opciones del Usuario:</strong> Puedes configurar tu dispositivo para rechazar cookies, aunque algunas funciones de la app podrían no funcionar correctamente.</p>
-                </section>
+                <Box>
+                    <Typography variant="h6" gutterBottom>3. Datos Recopilados</Typography>
+                    <Typography>
+                        Recopilamos los siguientes tipos de datos personales:
+                        <ul>
+                            <li>Información de contacto: nombre, correo electrónico, número de teléfono.</li>
+                            <li>Información técnica: tipo de dispositivo, sistema operativo, ubicación aproximada.</li>
+                            <li>Datos de uso: historial de alimentación, configuraciones, preferencias de usuario.</li>
+                        </ul>
+                        Estos datos son recopilados a través del uso de la aplicación y formularios voluntarios.
+                    </Typography>
+                </Box>
 
-                <section>
-                    <h2>6. Retención de Datos</h2>
-                    <p>Conservamos tu información mientras sea necesario para cumplir con los fines para los que fue recopilada. Después de este período, eliminamos o anonimizamos los datos.</p>
-                </section>
+                <Divider sx={{ my: 3 }} />
 
-                <section>
-                    <h2>7. Derechos de los Usuarios</h2>
-                    <p><strong>7.1. Acceso y Corrección:</strong> Tienes derecho a acceder y corregir tu información personal en cualquier momento.</p>
-                    <p><strong>7.2. Eliminación de Información:</strong> Puedes solicitar la eliminación de tu cuenta y tus datos.</p>
-                    <p><strong>7.3. Retiro de Consentimiento:</strong> Puedes retirar tu consentimiento en cualquier momento, lo que podría afectar algunas funcionalidades.</p>
-                </section>
+                <Box>
+                    <Typography variant="h6" gutterBottom>4. Finalidad del Tratamiento</Typography>
+                    <Typography>
+                        Los datos personales serán utilizados para:
+                        <ul>
+                            <li>Brindar recomendaciones nutricionales personalizadas.</li>
+                            <li>Optimizar la experiencia del usuario.</li>
+                            <li>Enviar notificaciones y alertas relevantes.</li>
+                            <li>Cumplir obligaciones legales y de seguridad.</li>
+                        </ul>
+                    </Typography>
+                </Box>
 
-                <section>
-                    <h2>8. Cambios en la Política de Privacidad</h2>
-                    <p>Nos reservamos el derecho de actualizar esta Política de Privacidad y te notificaremos sobre cualquier cambio.</p>
-                </section>
+                <Divider sx={{ my: 3 }} />
 
-                <section>
-                    <h2>9. Contacto</h2>
-                    <p>Si tienes preguntas, contáctanos a: <a href="mailto:tu-correo@dominio.com">tu-correo@dominio.com</a></p>
-                </section>
-            </div>
+                <Box>
+                    <Typography variant="h6" gutterBottom>5. Seguridad de la Información</Typography>
+                    <Typography>
+                        Nos comprometemos a implementar medidas técnicas y organizativas adecuadas para proteger sus datos contra acceso no autorizado, pérdida o alteración. Utilizamos estándares de seguridad compatibles con la legislación ecuatoriana vigente.
+                    </Typography>
+                </Box>
+
+                <Divider sx={{ my: 3 }} />
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>6. Derechos del Usuario</Typography>
+                    <Typography>
+                        Usted tiene derecho a acceder, rectificar, actualizar o suprimir sus datos personales en cualquier momento, así como oponerse al tratamiento de los mismos. Puede ejercer estos derechos escribiendo a <strong>terrawasuffa@gmail.com</strong>.
+                    </Typography>
+                </Box>
+
+                <Divider sx={{ my: 3 }} />
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>7. Claves y Accesos</Typography>
+                    <Typography>
+                        El usuario es responsable exclusivo de mantener la confidencialidad de su contraseña y claves de acceso. No nos responsabilizamos por el uso no autorizado que terceros hagan con dichas credenciales.
+                    </Typography>
+                </Box>
+
+                <Divider sx={{ my: 3 }} />
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>8. Cancelaciones y Reclamos</Typography>
+                    <Typography>
+                        Las devoluciones están sujetas al Art. 45 de la Ley Orgánica de Defensa del Consumidor. Tiene 72 horas posteriores a la recepción del producto para solicitar un reembolso si el estado del producto lo permite.
+                        <br />
+                        Para reclamos, puede comunicarse al 6005231 EXT. 140 – 126 o escribir a <strong>terrawasuffa@gmail.com</strong>.
+                    </Typography>
+                </Box>
+
+                <Divider sx={{ my: 3 }} />
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>9. Cambios en esta Política</Typography>
+                    <Typography>
+                        Nos reservamos el derecho de modificar esta Política en cualquier momento. En caso de realizarse cambios significativos, se notificará a través de la aplicación.
+                    </Typography>
+                </Box>
+
+                <Box textAlign="center" mt={6}>
+                    <Typography variant="body2" color="text.secondary">
+                        © 2025 AZAKTILSA S.A. - Todos los derechos reservados.
+                    </Typography>
+                </Box>
+            </Container>
         </div>
     );
 };
