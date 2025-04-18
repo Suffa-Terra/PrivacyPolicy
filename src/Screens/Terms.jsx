@@ -166,6 +166,29 @@ const Terms = () => {
                     </Typography>
                 </Box>
 
+                {/* Sección 13: Certificación DPF */}
+                <Divider sx={{ my: 3 }} />
+
+                <Box>
+                    <Typography variant="h6" gutterBottom>13. Certificación DPF de UTI</Typography>
+                    <Typography>
+                        UTI ha certificado al Departamento de Comercio de los Estados Unidos que se adhiere a (1) la UE-EE. UU. Principios del Marco de Privacidad de los datos relativos al tratamiento de los datos personales recibidos de los países miembros del EEA de acuerdo con UE-EE. UU. DPF, y del Reino Unido (y Gibraltar) en función de la Ampliación del Reino Unido al DPF UE-EE. UU. y (2) los Principios del Marco de Privacidad de los datos relacionados con el tratamiento de los datos personales recibidos de Suiza de acuerdo con la normativa del DPF Suiza-EE. UU.
+                        <br /><br />
+                        En caso de conflicto entre este aviso y los Principios mencionados anteriormente, prevalecerán los Principios. En caso de que los DPF UE-EE. UU. o el DPF Suiza-EE. UU. se invalidaran, UTI transferirá los datos que estén sujetos a estas certificaciones de acuerdo con los otros mecanismos de transferencia de datos descritos anteriormente.
+                        <br /><br />
+                        <strong>Tenga en cuenta lo siguiente:</strong>
+                        <ul>
+                            <li><strong>Ámbito:</strong> La certificación DPF de UTI se aplica a los datos relacionados con los interesados en el EEA, el Reino Unido o Suiza que recibe de otros responsables del tratamiento de datos.</li>
+                            <li><strong>Acceso:</strong> Los usuarios tienen derecho a acceder a sus datos personales, que están sujetos a la certificación DPF de UTI. Para obtener información sobre cómo ejercer este derecho, consulte la sección “Elección y transparencia”.</li>
+                            <li><strong>Transferencia posterior:</strong> UTI es el responsable de la transferencia de los datos personales, sujeta a su certificación a terceros.</li>
+                            <li><strong>Solicitud de las autoridades judiciales:</strong> La ley aplicable exige que UTI comparta los datos de los usuarios, incluidos los que pueden estar sujetos a la certificación de UTI, de conformidad con un proceso legal o una solicitud gubernamental, incluida la de las fuerzas de seguridad.</li>
+                            <li><strong>Investigación y ejecución:</strong> UTI está sujeto a las facultades de investigación y ejecución de la Comisión Federal de Comercio de los EE. UU.</li>
+                            <li><strong>Preguntas y disputas:</strong> Los pasajeros y los destinatarios de las entregas pueden contactar con UTI aquí, y los conductores y repartidores pueden contactar con UTI aquí si tienen preguntas sobre nuestro cumplimiento de los Principios mencionados anteriormente.</li>
+                        </ul>
+                    </Typography>
+                </Box>
+
+
                 <Box textAlign="center" mt={6}>
                     <Typography variant="body2" color="text.secondary">
                         © 2025 AZAKTILSA S.A. - Todos los derechos reservados.
